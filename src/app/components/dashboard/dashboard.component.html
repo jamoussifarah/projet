@@ -1,0 +1,50 @@
+<app-menu-admin></app-menu-admin>
+<h1> INFOS SUR ADMIN</h1>
+
+<div class="flip-card">
+  <div class="flip-card-inner pos">
+    <div class="flip-card-front pos">
+      <img src="assets/Images/moi.jpg" alt="Avatar" style="width:300px;height:300px;">
+    </div>
+    <div class="flip-card-back">
+      <h1>Jamoussi farah</h1> 
+      <p>admin </p> 
+      <p>username:{{infos.login}}</p>
+      <p>password: {{infos.password}}</p>
+      <button type="button" class="btn btn-light" (click)="changer()">Changer le mot de passe</button>
+
+    </div>
+  </div>
+</div>
+<section class="vh-100" *ngIf="test">
+    <div class="container py-5 h-100">
+      <div class="row d-flex align-items-center justify-content-center h-100">
+        <div class="col-md-8 col-lg-7 col-xl-6">
+          <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-login-form/draw2.svg"
+            class="img-fluid" alt="Phone image">
+        </div>
+        <div class="col-md-7 col-lg-5 col-xl-5 offset-xl-1">
+          <form [formGroup]="adminForm" (ngSubmit)="modifier()">
+            <!-- Password input -->
+            <div class="form-outline mb-4">
+                <input formControlName="password" type="password" id="form1Example23" class="form-control form-control-lg" />
+                <label class="form-label" for="form1Example23">nouveau mot de passe
+                  
+                </label>
+              </div>
+  
+            <!-- Password input -->
+            <div class="form-outline mb-4">
+              <input  type="password" id="form1Example23" class="form-control form-control-lg" />
+              <label class="form-label" for="form1Example23">verification nouveau mot de passe
+
+              </label>
+            </div>
+            <!-- Submit button -->
+            <button type="submit" class="btn btn-primary btn-lg btn-block">Changer le mot de passe</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+  

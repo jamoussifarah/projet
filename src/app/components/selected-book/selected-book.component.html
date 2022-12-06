@@ -1,0 +1,49 @@
+<app-menu></app-menu>
+<div class="card" style="width:400px">
+  <img class="card-img-top" [src]=Selected.img alt="Card image">
+  <div class="card-body">
+    <h4 class="card-title">{{Selected.libelle|nom |titlecase}}</h4>
+    <p class="card-text">Auteur:{{Selected.auteur}}
+    <br><div class="badge rounded-pill bg-dark">Prix:{{Selected.prix}}DT</div>
+    <br>Disponible <input type="checkbox" class="form-check-label " [checked]="Selected.disponible"> 
+          <br>  Date de publication : {{Selected.datePublication }}<br> 
+          <br>
+    </p>
+    <button class="btn btn-outline-secondary" routerLink="/livres" >Retour</button>
+    <button class="btn btn-outline-secondary" (click)="afficher()">Avis</button>
+    <button class="btn btn-outline-secondary" (click)="afficherC()" >Acheter</button>
+    <div class="container justify-content-center mt-5 border-left border-right" *ngIf="affiche">
+      <div class="d-flex justify-content-center py-2" >
+        <div class="second py-2 px-2" *ngFor="let t of Selected.comments"> 
+          <span class="text1" >{{t.message}}</span>
+            <div class="d-flex justify-content-between py-1 pt-2">
+                <div><img src="https://i.imgur.com/AgAC1Is.jpg" width="18"><span class="text2">{{t.nom}}</span></div>
+                <div><span class="thumbup"><i class="fa fa-thumbs-o-up"></i></span><span class="text4">{{t.note}}/20</span></div>
+            </div>
+        </div>
+        </div>
+      </div>
+    <div class="container"  *ngIf="afficheC">
+      <h2 class="text-center">Passer Commande</h2>
+      <form [formGroup]="achatForm" class="bordure">
+        <label> Saisir votre nom:</label>
+        <input type="text" class="form-control" formControlName="nom" /> <br />
+        <label> Le titre du livre:</label>
+        <input type="text" class="form-control" formControlName="livre" /> <br />
+        <label> Le nombre de livre :</label>
+        <input type="number" class="form-control" formControlName="nombre" />
+        <br />
+        <button class="btn btn-dark" (click)="ajouterCommande()">Acheter</button>
+        <input
+          type="reset"
+          class="btn btn-secondary"
+          value="Annuler"
+        />  
+      </form>
+  </div>
+</div>
+
+
+
+
+<app-footer></app-footer>

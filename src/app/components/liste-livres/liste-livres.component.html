@@ -1,0 +1,30 @@
+<app-menu></app-menu>
+<form [formGroup]="f">
+    <div class="text-center">
+      <label></label><br>
+      <input type="text" class="form-control"  class="col-md-2" formControlName="recherche" [(ngModel)]="searchText" #nom><br>
+      <button class="btn" (click)="recherche(nom.value)">Rechercher</button>
+    </div>
+  
+  </form>
+<div class="container">
+    <div class=" text-center row" >
+        <div  *ngFor="let t of lesLivres| filter:searchText" class="col-sm">
+        <div class=" card">
+        <div class="card-header">
+        <h5>Livre numéro:{{t.id}}</h5><br>
+       <h4>{{t.libelle|nom |titlecase}}</h4> <br></div>
+        <div class="card-body">
+        <img [src]=t.img><br>
+        Auteur : {{t.auteur}}<br>
+            <br> Date de publication : {{t.datePublication }}<br> 
+            Disponible <input type="checkbox" class="form-check-label " [checked]="t.disponible"> 
+            <br><br>
+        Prix du livre :{{t.prix}}Dt
+        <br></div>
+        <div class="card-footer">
+      <button class="btn btn-outline-secondary " [routerLink]="['/livres',t.id]" >Détail</button></div>
+    </div>
+    </div>
+</div>
+<app-footer></app-footer>

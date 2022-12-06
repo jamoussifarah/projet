@@ -1,0 +1,194 @@
+{
+  "admin": {
+    "login": "farah",
+    "password": "farah2003"
+  },
+  "achat": [
+    {
+      "id": 1,
+      "nom": "Kacem",
+      "livre": "Sauvages",
+      "nombre": 1
+    },
+    {
+      "id": 2,
+      "nom": "amina",
+      "livre": "La Fracture",
+      "nombre": 2
+    },
+    {
+      "id": 3,
+      "nom": "hedia",
+      "livre": "De pierre et d’os",
+      "nombre": 3
+    },
+    {
+      "nom": "sf",
+      "livre": "zzr",
+      "nombre": 14,
+      "id": 4
+    },
+    {
+      "nom": "jbujh",
+      "livre": "jjuiui",
+      "nombre": 12,
+      "id": 5
+    }
+  ],
+  "produit": [
+    {
+      "id": 1,
+      "libelle": " La Fracture",
+      "img": "assets/Images/1.jpg",
+      "prix": 1580,
+      "disponible": true,
+      "datePublication": "2022-05-03",
+      "auteur": "Nina_Allan",
+      "comments": [
+        {
+          "nom": "ahmed",
+          "message": "histoire magnifique",
+          "note": 18
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "libelle": "Comme a la guerre",
+      "img": "assets/Images/2.jpg",
+      "prix": 15000,
+      "disponible": false,
+      "datePublication": "2022-12-03",
+      "auteur": "Julien Blanc-Gras ",
+      "comments": [
+        {
+          "nom": " ogmios",
+          "message": "C’est un prodigieux roman qui a valeur de témoignage historique sur l’existence de ces sinistres lieux qui ont participé à l’éradication des Amérindiens canadiens. Une plaie ouverte dans l’histoire du Québec pour lequel le 1er ministre Justin Trudeau à demandé pardon au peuple autochtone en 2015. Outre le fonds historique, ce qui fait l’intérêt de ce roman, c’est la qualité de l’écriture de Nathalie Bernard et son talent pour bâtir une intrigue qui prend aux tripes… et ce n’est pas qu’une façon de parler !",
+          "note": 18
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "libelle": "Chambre 128",
+      "img": "assets/Images/3.jpg",
+      "prix": 15000,
+      "disponible": false,
+      "datePublication": "2022-12-03",
+      "auteur": "Cathy Bonidan",
+      "comments": [
+        {
+          "nom": "Zabouille",
+          "message": "Après avoir lu ce livre, la prochaine fois que vous irez séjourner dans une chambre d’hôtel, vous penserez à cette histoire. Et en ouvrant le tiroir de votre table de chevet, peut-être vous amuserez-vous à espérer y trouver un manuscrit. Ce fut ainsi que débuta la quête fabuleuse d’Anne-Lise. A travers ce roman épistolaire, genre littéraire que j’affectionne, Cathy Bonidan lance son personnage principal dans une sacrée aventure. […] J’ai terminé ma lecture, enchantée, charmée par cette histoire et son intrigue",
+          "note": 15
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "libelle": "De pierre et d’os",
+      "img": "assets/Images/4.jpg",
+      "prix": 14700,
+      "disponible": true,
+      "datePublication": "2022-12-03",
+      "auteur": "Bérengère Cournut",
+      "comments": [
+        {
+          "nom": "sandrine57",
+          "message": "Roman initiatique, écologique, poétique, onirique, ethnologique, chamanique mais aussi roman envoûtant, hypnotique, magnifique… De pierre et d’os est tout cela mais c’est aussi un voyage dans le Grand Nord, aux confins du monde, dans un paysage blanc et glacial et une totale immersion dans la culture inuit au côté d’une femme parmi les hommes et les esprits. C’est un monde cruel que nous présente Bérengère Cournut, où l’on tue pour ne pas être tué, où il faut lutter contre les éléments mais on y trouve aussi de la poésie dans la façon d’appréhender la nature, dans les chants et les rites",
+          "note": 15
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "libelle": "La Passe-Miroir",
+      "img": "assets/Images/5.jpg",
+      "prix": 30700,
+      "disponible": true,
+      "datePublication": "2022-02-03",
+      "auteur": "Christelle Dabos",
+      "comments": [
+        {
+          "nom": "Latetedansleslivres",
+          "message": "Si le premier tome me faisait beaucoup penser à plein d’univers déjà connus comme ceux des films d’animation de Miyazaki l’auteure a su totalement créer ses propres références et faire vivre un monde unique au fil des pages et des tomes. C’est le genre de saga qu’il faut lire et relire car chaque relecture est un enchantement et des moments qui passent inaperçus au premier abord prennent ensuite un nouveau sens",
+          "note": 10
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "libelle": " West",
+      "img": "assets/Images/6.webp",
+      "prix": 100000,
+      "disponible": true,
+      "datePublication": "2000-02-03",
+      "auteur": "Carys Davies",
+      "comments": [
+        {
+          "nom": "liberliber",
+          "message": " Roman qu’on pourrait rapprocher du genre « nature writing », West est un joli livre sur la liberté, le sens de la vie, la réalisation de soi… A la manière d’un conte, le récit de Carys Davies évoque un magnifique amour entre une fille, formidable et courageuse Bess, et un père. L’enfant puise sa force dans l’espoir du retour de Bellman, trompant l’attente en inventant des rituels qui seraient autant d’heureux présages. C’est juste, sensible et émouvant",
+          "note": 19
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "libelle": "Réservoir 13",
+      "img": "assets/Images/7.jpg",
+      "prix": 50000,
+      "disponible": true,
+      "datePublication": "2003-02-03",
+      "auteur": "Jon McGregor",
+      "comments": [
+        {
+          "nom": " LePamplemousse ",
+          "message": "Une jeune fille disparaît dès le début du roman, et son souvenir, telle une odeur légère mais tenace, va imprégner tout le roman, malgré de vaines recherches. […] Avec une écriture simple mais puissante, l’auteur nous décrit la vie de tout un village, nos vies, faites de tout petits riens, à la fois complètement insignifiantes mais tellement fragiles et précieuses. Je me suis laissée entraîner dans cette litanie lancinante qui égrène les jours, qui décrit le cycle de la nature, qui nous révèle les failles et les espoirs de chacun, qui nous montre ce que peut être la joie mais aussi la douleur, le chagrin tout autant que le désir. Un roman que j’ai dégusté en prenant mon temps pour mieux le savourer",
+          "note": 16
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "libelle": "L’Autre Chambre",
+      "img": "assets/Images/8.jpg",
+      "prix": 14000,
+      "disponible": true,
+      "datePublication": "1999-07-03",
+      "auteur": "Diane Schmidt",
+      "comments": [
+        {
+          "nom": "  paroles ",
+          "message": "Voilà un court roman inclassable, une écriture poétique et violente, des phrases lancées comme des flèches piquantes et acérées. Deux personnages de femmes aux destins douloureux, mal dans leur peau, luttant pour leur survie. C’est formidablement triste et bien écrit ! C’est un roman très court et très pudique malgré le sujet abordé, le désir ou son absence et sa place dans nos vies. C’est un texte que j’ai lu puis relu à voix haute pour mieux ressentir les douleurs partagées. L’absence de désir pour l’une (Marine) mais l’envie de vivre malgré tout qui est là, différente certes mais tellement présente et douloureuse, et encore plus après l’avoir connue. Et pour la plus jeune (Ondine), l’envie d’être aimée et d’aimer malgré les coups portés à l’âme et au corps par sa famille d’abord et par son amant ensuite qui l’a placée comme danseuse dans un night-club",
+          "note": 14
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "libelle": "La Maison des oiseaux",
+      "img": "assets/Images/9.jpg",
+      "prix": 45000,
+      "disponible": true,
+      "datePublication": "2012-07-24",
+      "auteur": "Allan Stratton",
+      "comments": [
+        {
+          "nom": " Lire-une-passion",
+          "message": "C’est un roman qui a su me toucher par la justesse de ses mots, par ses messages et par l’amour qu’il véhicule. C’est une histoire belle, touchante, qui m’a autant bouleversée qu’ému. Un roman que je conseille à tous de découvrir. Pour le combat que mène cette adolescente pour ne pas voir sa grand-mère dépérir dans une maison de retraite et pour comprendre ce que peut vivre une personne âgée quand tout le monde (ou presque) est contre elle. Lisez-le.",
+          "note": 14
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "libelle": "titrehhhhhhh",
+      "auteur": "",
+      "img": "",
+      "datePublication": "",
+      "prix": "0",
+      "disponible": false,
+      "comments": []
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+<app-menu-admin></app-menu-admin>
+<form [formGroup]="f">
+    <div>
+      <label> Recherche:</label>
+     <input type="text" class="form-control"  class="col-md-2" formControlName="recherche" [(ngModel)]="s" #nom><br>
+    </div>
+  
+  </form>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>id</th>
+            <th>nom de personne</th>
+            <th>titre du livre</th>
+            <th>quantité</th>
+            <th>Supprimer</th>
+        </tr>            
+    </thead>
+    <tbody>
+        <tr *ngFor="let t of lesAchats|filter:s">
+            <td> {{t.id}} </td>
+            <td> {{t.nom}}</td>
+            <td>{{t.livre}} </td>
+            <td> {{t.nombre}} </td>
+            <td>
+                <button class="btn btn-outline-secondary " (click)="deleteAchat(t.id)">Supprimer</button>
+            </td>
+            </tr>
+        
+        </tbody>
+    </table>

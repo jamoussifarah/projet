@@ -1,0 +1,15 @@
+.facebook,.insta{
+
+    width: 50px;
+    height: 25px;
+}
+footer{
+    
+    margin-bottom: 0px;
+    margin-top: 250px;
+    font-size: 15px;
+    border-left: 0 ;
+    border-right: 0;
+    border-bottom: 0;
+    border-top:5px solid rgb(247, 201, 180);
+}

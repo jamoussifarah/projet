@@ -1,0 +1,85 @@
+<app-menu-admin></app-menu-admin>
+
+<div class="container">
+    <h2 class="text-center">Gestion des livres</h2>
+    <form [formGroup]="livreForm" class="bordure">
+      <label> Titre:</label>
+      <input type="text" class="form-control" formControlName="libelle" /> <br />
+      <label> Auteur:</label>
+      <input type="text" class="form-control" formControlName="auteur" /> <br />
+      <label> Image:</label>
+      <input type="text" class="form-control" formControlName="img" />
+      <label> Prix:</label>
+      <input type="number" class="form-control" formControlName="prix" />
+      <label> date de publication:</label>
+      <input type="date" class="form-control" formControlName="datePublication" />
+      <label>
+        <input type="checkbox" formControlName="disponible" />Disponible
+      </label>
+      <div class="col" formArrayName="villes">
+        <div *ngFor="let d of comments.controls; let i= index">
+            <label>Commentaire {{i+1}}  </label><br>
+            <input type="text" class="form-control" [formControlName]="i"><br>
+        </div>
+    <input type="button" class="btn bouton" value="plus ville">
+</div>
+      <br />
+      <button class="btn btn-dark" (click)="addLiv()">Ajouter</button>
+      <input
+        type="reset"
+        class="btn btn-secondary"
+        value="Effacer"
+      />
+    </form>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>id</th>
+                <th>img</th>
+                <th>titre</th>
+                <th>Auteur</th>
+                <th>Disponibilité</th>
+                <th>datePublication</th>
+                <th>Prix</th>
+                <th>Commentaire</th> 
+                <th>Modifier</th>
+                <th>Supprimer</th>
+            </tr>            
+        </thead>
+        <tbody>
+            <tr *ngFor="let t of lesLivres ">
+                <td> {{t.id}} </td>
+                <td> <img style="height:100px;width:100px" [src]="t.img"> </td>
+                <td>{{t.libelle}} </td>
+                <td> {{t.auteur}} </td>
+                <td>
+ 
+                    <input type="checkbox" [checked]= "t.disponible" disabled> Disponible
+                </td>             
+                <td ><span>{{t.datePublication}}</span>  </td>
+                <td> {{t.prix}} DT </td>
+                <td> 
+                    <div class="container justify-content-center mt-5 border-left border-right">
+                        <div class="d-flex justify-content-center py-2" >
+                          <div class="second py-2 px-2" *ngFor="let c of t.comments;index as i"> 
+                            <span class="text1" >{{c.message}}</span>
+                              <div class="d-flex justify-content-between py-1 pt-2">
+                                  <div><img src="https://i.imgur.com/AgAC1Is.jpg" width="18"><span class="text2">{{c.nom}}</span></div>
+                                  <div><span class="thumbup"><i class="fa fa-thumbs-o-up"></i></span><span class="text4">{{c.note}}/20</span></div>
+                                </div>
+                              </div>
+                          </div>
+                          </div>
+                            
+                
+                </td>
+                <td>
+                    <button class="btn btn-outline-secondary " (click)="modifier(t.id)">Modifier</button>
+                </td>               
+                <td>
+                    <button class="btn btn-outline-secondary " (click)="deleteLiv(t.id)">Supprimer</button>
+                </td>           
+            </tr>
+            
+        </tbody>
+    </table>
